@@ -1,0 +1,130 @@
+.navbar {
+    display: flex !important;
+    z-index: 1000;
+    padding: 0;
+}
+.navbar .logo {
+    width: 65px;
+}
+.navbar .logo img {
+    width: 100%;
+}
+.navbar .logo div {
+    font-weight: bold;
+    font-size: 17px;
+    margin-top: -4px;
+}
+.navbar input {
+    border: none;
+    width: 100%;
+}
+.navbar input:focus {
+    outline: none;
+}
+.navbar .inputItem {
+    border: 1px solid #3b3b3b;
+    border-radius: 15px;
+    padding: 3px 15px;
+    width: 200px;
+    display: flex;
+}
+.navbar .icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-transform: capitalize;
+}
+.navbar .icons .auth {
+    font-weight: 500;
+}
+.navbar .icons .i,
+.navbar .mobile_bar .iconBar {
+    cursor: pointer;
+}
+.navbar .icons .i:hover {
+    color: #2fc1c1;
+}
+.mobile_bar {
+    display: none;
+}
+
+/* resposeve media queries */
+@media (max-width: 991px) {
+    .mobile_bar {
+        display: block;
+    }
+    .navbar .inputItem {
+        border: 1px solid #3b3b3b;
+        border-radius: 15px;
+        padding: 3px 15px;
+        width: 90%;
+        display: flex;
+    }
+    .nav_menu {
+        position: fixed;
+        top: 55px;
+        left: -100%;
+        width: 100%;
+        padding: 10px 50px;
+        background-color: #fff;
+        box-shadow: 0 1px 5px rgb(199, 198, 198);
+        z-index: 999;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+    .active_menu {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        width: 100%;
+        padding: 10px 50px;
+        background-color: #fff;
+        box-shadow: 0 1px 5px rgb(199, 198, 198);
+        z-index: 999;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: 1s;
+    }
+}
+@media (max-width: 575px) {
+    .navbar .inputItem {
+        border: 1px solid #3b3b3b;
+        border-radius: 15px;
+        padding: 3px 15px;
+        width: 100%;
+        display: flex;
+    }
+}
+@media (max-width: 310px) {
+    .navbar .logo {
+        width: 50px;
+    }
+    .navbar .logo div {
+        font-size: 12px;
+    }
+    .navbar .icons .auth {
+        font-size: 12px;
+    }
+    .navbar .icons .cartIconI,
+    .navbar .icons .iconBar {
+        font-size: 18px;
+    }
+    .navbar .icons .badge {
+        font-size: 10px;
+        margin-left: 0 !important;
+        padding: 2px 3.5px !important;
+    }
+    .navbar .icons {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        text-transform: capitalize;
+    }
+}
