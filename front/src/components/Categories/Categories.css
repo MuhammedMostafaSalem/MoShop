@@ -1,0 +1,10 @@
+.divContainer {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media (max-width: 575px) {
+    .divContainer {
+        flex-direction: column;
+    }
+}
