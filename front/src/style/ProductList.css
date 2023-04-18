@@ -1,0 +1,38 @@
+.ProductListContainer h3 {
+    margin: 20px;
+}
+.ProductListContainer .filterContainer {
+    display: flex;
+    justify-content: space-between;
+}
+.ProductListContainer .filter {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+.ProductListContainer .filterText {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.ProductListContainer .form-select {
+    border-color: inherit;
+}
+.ProductListContainer .form-select:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 991px) {
+    .ProductListContainer .filterContainer {
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .ProductListContainer {
+        display: block;
+    }
+}
+
