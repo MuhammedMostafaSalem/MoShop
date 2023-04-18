@@ -1,7 +1,6 @@
 .categoryItem {
-    flex: 1;
     margin: 10px;
-    height: 70vh;
+    height: 50vh;
     position: relative;
 }
 .categoryItem img {
@@ -31,15 +30,4 @@
     color:gray;
     cursor: pointer;
     font-weight: 600;
-}
-
-@media (max-width: 767px) {
-    .categoryItem .info h3 {
-        font-size: 19px;
-    }
-}
-@media (max-width: 575px) {
-    .categoryItem img {
-        height: 300px;
-    }
 }
