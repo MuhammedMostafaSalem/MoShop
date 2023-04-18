@@ -1,0 +1,56 @@
+.newsletterContainer {
+    height: 60vh;
+    background-color: #fcf5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.newsletterContainer h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.newsletterContainer .desc {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.newsletterContainer .inputContainer {
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+}
+.newsletterContainer .inputContainer input {
+    border: none;
+    flex: 8;
+    padding-left: 20px;
+}
+.newsletterContainer .inputContainer input:focus {
+    outline: none;
+}
+.newsletterContainer .inputContainer .btn {
+    flex: 1;
+    border: none;
+    background-color: teal;
+    color: white;
+    border-radius: 0px;
+}
+
+@media (max-width: 575px) {
+    .newsletterContainer {
+        height: 40vh;
+    }
+    .newsletterContainer h1 {
+        font-size: 55px;
+        margin-bottom: 20px;
+    }
+    .newsletterContainer .desc {
+        text-align: center;
+    }
+    .newsletterContainer .inputContainer {
+        width: 80%;
+    }
+}
