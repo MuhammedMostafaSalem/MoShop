@@ -5,6 +5,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocalMallOutlinedIcon from '@mui/icons-material/LocalMallOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import logo from '../../../assets/logoipsum-280.svg';
 
 const NavBar = () => {
     // select toggle menu mobile
@@ -20,7 +21,7 @@ const NavBar = () => {
                     </div>
                 </div>
                 <Navbar.Brand className='logo'>
-                    <img src="logoipsum-280.svg" alt="" />
+                    <img src={logo} alt="" />
                     <div>MoShop</div>
                 </Navbar.Brand>
 
