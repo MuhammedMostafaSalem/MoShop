@@ -1,0 +1,184 @@
+.cartContainer h3 {
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
+.cartContainer .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.cartContainer .topButton,
+.cartContainer .checkoutButton {
+    font-weight: 600;
+}
+.cartContainer .topButton {
+    border: 2px solid #000;
+    color: #000;
+}
+.cartContainer .checkoutButton {
+    background-color: #000;
+    color: #fff;
+}
+.cartContainer .topTexts {
+    display: flex;
+    gap: 30px;
+}
+.cartContainer .topText {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+.cartContainer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.cartContainer .product {
+    display: flex;
+    justify-content: space-between;
+}
+.cartContainer .product:not(:last-child) {
+    border-bottom: 1px solid #000;
+}
+.cartContainer .productDetail {
+    display: flex;
+}
+.cartContainer .productDetail img {
+    width: 200px;
+}
+
+.cartContainer .productDetail .details {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.cartContainer .productDetail .details p {
+    margin-bottom: 0;
+}
+.cartContainer .productDetail .productColor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.cartContainer .productDetail .productName ,
+.cartContainer .productDetail .productId ,
+.cartContainer .productDetail .productSize {
+    display: flex;
+    gap: 10px;
+}
+.cartContainer .productDetail .productName p ,
+.cartContainer .productDetail .productId p ,
+.cartContainer .productDetail .productSize p {
+    font-weight: bold;
+}
+.cartContainer .priceDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cartContainer .priceDetail .productAmountContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cartContainer .priceDetail .productAmount {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px;
+}
+.cartContainer .priceDetail .productAmountContainer  .icon {
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+.cartContainer .priceDetail .productAmountContainer  .icon:hover {
+    transform: scale(1.2);
+}
+.cartContainer .priceDetail .productPrice {
+    font-size: 30px;
+    font-weight: 200;
+}
+.cartContainer .summary {
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+}
+.cartContainer .summary h3 {
+    font-weight: 400;
+}
+.cartContainer .summary .summaryItem {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.cartContainer .summary .summaryItem:last-child {
+    font-weight: bold;
+    font-size: 25px;
+    border-top: 1px solid #000;
+    padding: 10px 0;
+}
+.cartContainer .info {
+    width: 75%;
+}
+
+@media (max-width: 1199px) {
+    .cartContainer .info {
+        width: 70%;
+    }
+}
+@media (max-width: 991px) {
+    .cartContainer .info {
+        width: 100%;
+    }
+    .cartContainer .bottom {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px) {
+    .cartContainer .top {
+        padding: 10px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .cartContainer .productDetail .productName ,
+    .cartContainer .productDetail .productId ,
+    .cartContainer .productDetail .productSize {
+        font-size: 12px;
+    }
+}
+@media (max-width: 575px) {
+    .cartContainer .productDetail .productName ,
+    .cartContainer .productDetail .productId ,
+    .cartContainer .productDetail .productSize {
+        font-size: 100%;
+    }
+    .cartContainer .productDetail {
+        display: block;
+    }
+}
+@media (max-width:363px) {
+    .cartContainer .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cartContainer .productDetail .productName ,
+    .cartContainer .productDetail .productId ,
+    .cartContainer .productDetail .productSize {
+        font-size: 12px;
+    }
+    .cartContainer .productDetail img {
+        width: 150px;
+    }
+}
